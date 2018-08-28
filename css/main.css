@@ -124,6 +124,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     margin-bottom: 1.8rem;
 }
 
+.row h3 {
+    margin-top: 4rem;
+}
+
 @media only screen and (max-width: 600px) {
     h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
         margin-top: 5.1rem;
@@ -368,7 +372,7 @@ ul.disc li::before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #00ffff;
+    background: #06c967;
     position: absolute;
     left: -17px;
     top: 11px;
@@ -377,7 +381,7 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color: #00ffff;
+    color: #06c967;
 }
 
 dd {
@@ -483,7 +487,7 @@ dl,
 form,
 .video-container,
 .cl-custom-select {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -501,9 +505,9 @@ form,
 .pace-inactive {
     display: none;
 }
-
+/*
 .pace .pace-progress {
-    background: #00ffff;
+    background: #06c967;
     position: fixed;
     z-index: 900;
     top: 0;
@@ -511,7 +515,7 @@ form,
     width: 100%;
     height: 4px;
 }
-
+*/
 .oldie .pace {
     display: none;
 }
@@ -546,7 +550,7 @@ form,
 }
 
 .line-scale-pulse-out > div {
-    background-color: #00ffff;
+    background-color: #06c967;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -773,7 +777,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    -webkit-text-fill-color: #00ffff;
+    -webkit-text-fill-color: #06c967;
     transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -833,8 +837,8 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-    background: #00ffff;
-    border-color: #00ffff;
+    background: #06c967;
+    border-color: #06c967;
     color: #FFFFFF;
 }
 
@@ -873,8 +877,8 @@ input[type="button"].btn--primary:focus {
 
 .btn--stroke, button.btn--stroke {
     background: transparent !important;
-    border: 0.2rem solid #00ffff;
-    color: #00ffff;
+    border: 0.2rem solid #06c967;
+    color: #06c967;
 }
 
 .btn--stroke:hover, button.btn--stroke:hover {
@@ -1102,7 +1106,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .stats-tabs li a:hover {
-    color: #00ffff;
+    color: #06c967;
 }
 
 .stats-tabs li a em {
@@ -1247,7 +1251,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.333;
     text-transform: uppercase;
     letter-spacing: .25rem;
-    color: #00ffff;
+    color: #06c967;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -1421,7 +1425,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .slick-slider .slick-dots li.slick-active button,
 .slick-slider .slick-dots li:hover button {
-    background: #00ffff;
+    background: #06c967;
 }
 
 
@@ -1867,8 +1871,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__scroll a::before {
-    border-bottom: 2px solid #00ffff;
-    border-right: 2px solid #00ffff;
+    border-bottom: 2px solid #06c967;
+    border-right: 2px solid #06c967;
     content: '';
     display: block;
     height: 8px;
@@ -1892,7 +1896,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #00ffff;
+    background-color: #06c967;
     position: absolute;
     right: 7.2rem;
     bottom: 0;
@@ -2209,7 +2213,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-green {
-    padding-top: 16.2rem;
+    padding-top: 10rem;
     padding-bottom: 9rem;
     background-color: #06c967;
     color: #000;
@@ -2292,7 +2296,7 @@ html.no-csstransitions .home-content__main {
 .s-news {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #00ffff;
+    background-color: #06c967;
     color: #010507;
     position: relative;
 }
@@ -2314,7 +2318,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .news-desc a:hover {
-    color: #00ffff;
+    color: #06c967;
     background-color: #222;
 }
 
@@ -2325,6 +2329,7 @@ html.no-csstransitions .home-content__main {
 .newsroom-text {
     font-family: 'Roboto', sans-serif;
     color: #000;
+    font-size: 0.8em;
 }
 
 .newsroom-text a {
@@ -2385,11 +2390,11 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # members
+ * # grey zone
  *
  * ------------------------------------------------------------------- */
 .s-grey {
-    padding-top: 16.2rem;
+    padding-top: 10rem;
     padding-bottom: 13.2rem;
     background-color: #ccc;
     color: #111;
@@ -2437,7 +2442,7 @@ html.no-csstransitions .home-content__main {
 
 .members-list .members-icon {
     float: left;
-    color: #00ffff;
+    color: #06c967;
     font-size: 4.8rem;
     margin-top: -.6rem;
 }
@@ -2561,12 +2566,12 @@ html.no-csstransitions .home-content__main {
 
 .services-list .activity-text h3,
 .services-list .activity-text h2 {
-    color: #00ffff;
+    color: #06c967;
 }
 
 .activity-list .activity-icon {
     float: left;
-    color: #00ffff;
+    color: #06c967;
     font-size: 4.8rem;
     margin-top: -.6rem;
 }
@@ -3146,7 +3151,7 @@ html.no-csstransitions .home-content__main {
     padding: 0 2rem;
     margin: 0;
     color: #FFFFFF;
-    background: #00ffff;
+    background: #06c967;
 }
 
 .s-contact .form-field label::after {
@@ -3157,14 +3162,14 @@ html.no-csstransitions .home-content__main {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #00ffff;
+    border-right: 5px solid #06c967;
 }
 
 .contact__line {
     display: block;
     width: 2px;
     height: 20.4rem;
-    background-color: #00ffff;
+    background-color: #06c967;
     position: absolute;
     left: 50%;
     top: -10.2rem;
@@ -3191,7 +3196,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-content h5 {
     margin-top: 0;
-    color: #00ffff;
+    color: #06c967;
 }
 
 .contact-content input[type="email"],
@@ -3218,7 +3223,7 @@ html.no-csstransitions .home-content__main {
 .contact-content textarea:focus,
 .contact-content select:focus {
     color: #FFFFFF;
-    border-bottom: 1px solid #00ffff;
+    border-bottom: 1px solid #06c967;
 }
 
 .contact-content button,
@@ -3309,7 +3314,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-social li a:hover, 
 .contact-social li a:focus {
-    color: #00ffff;
+    color: #06c967;
 }
 
 .contact-social li:last-child {
@@ -3332,7 +3337,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .message-success {
-    color: #00ffff;
+    color: #06c967;
 }
 
 .message-warning i, .message-success i {
@@ -3620,8 +3625,8 @@ footer .row {
     top: 0;
     right: 0;
     color: #FFFFFF;
-    background: #00ffff;
-    border-color: #00ffff;
+    background: #06c967;
+    border-color: #06c967;
     padding: 0 20px;
 }
 
@@ -3646,14 +3651,16 @@ footer .row {
     font-size: 14px;
 }
 
-.footer-bottom .copyright span {
+.footer-bottom .copyright span,
+.footer-bottom .footer-social span {
     display: inline-block;
 }
 
-.footer-bottom .copyright span::after {
-    content: "|";
+.footer-bottom .copyright span::after, 
+.footer-bottom .footer-social span::after {
+    content: " ";
     display: inline-block;
-    padding: 0 1rem 0 1.2rem;
+    padding: 0 2rem 0 1.2rem;
     color: rgba(255, 255, 255, 0.05);
 }
 
