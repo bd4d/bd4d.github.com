@@ -75,7 +75,7 @@ html, body {
 
 body {
     background: #111111;
-    font-family: "lora-regular", serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.7rem;
     font-style: normal;
     font-weight: normal;
@@ -90,14 +90,14 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-    color: #757575;
+    color: #06c967;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     text-decoration: underline;
 }
 
 a:hover, a:focus, a:active {
-    color: #757575;
+    color: #06c967;
 }
 
 a:hover, a:active {
@@ -1514,7 +1514,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     letter-spacing: .25rem;
     margin-bottom: 4.8rem;
     margin-top: .9rem;
-    color: #00ffff;
+    color: #06c967;
 }
 
 .header-nav p {
@@ -1544,6 +1544,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .header-nav__list a,
 .header-nav__list a:visited {
     color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-nav__list a:hover,
+.header-nav__list a:active {
+    color: #06c967;
+    text-decoration: none;
 }
 
 .header-nav__social {
@@ -1652,7 +1659,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #00ffff;
+    color: #06c967;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
@@ -1794,7 +1801,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .home-content h3 {
     font-family: "montserrat-medium", sans-serif;
     font-size: 1.6rem;
-    color: #00ffff;
+    color: #06c967;
     text-transform: uppercase;
     letter-spacing: .3rem;
     position: relative;
@@ -1945,7 +1952,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-social span {
-    color: #00ffff;
+    color: #ffffff;
     right: 4.5rem;
     font-size: 1.3rem;
     opacity: 0;
@@ -2201,32 +2208,35 @@ html.no-csstransitions .home-content__main {
  * # intro
  *
  * ------------------------------------------------------------------- */
-.s-intro {
+.s-green {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #00ffff;
-    color: #222;
+    background-color: #06c967;
+    color: #000;
     position: relative;
 }
 
-.s-intro .section-header.has-bottom-sep::before {
+.s-green .section-header.has-bottom-sep::before {
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-.intro-desc {
-    font-size: 2.4rem;
+.green-desc {
+    font-size: 2rem;
     line-height: 1.75;
     text-align: center;
     max-width: 1024px;
 }
 
-.intro-desc a {
-    color: #222;
+.green-desc a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
 }
 
-.intro-desc a:hover {
-    color: #00ffff;
-    background-color: #000;
+.green-desc a:hover,
+.green-desc a:active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2234,43 +2244,43 @@ html.no-csstransitions .home-content__main {
  * about
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .intro-desc {
+    .green-desc {
         font-size: 2.2rem;
         max-width: 940px;
     }
-    .intro-stats {
+    .green-stats {
         padding-top: 3rem;
         padding-bottom: 3.9rem;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .intro-desc {
+    .green-desc {
         font-size: 2rem;
         max-width: 600px;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    .intro__line {
+    .green__line {
         right: 5.5rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .s-intro {
+    .s-green {
         padding-top: 12rem;
     }
-    .intro-desc {
+    .green-desc {
         font-size: 1.9rem;
     }   
-    .intro__line {
+    .green__line {
         height: 7.2rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .intro-desc {
+    .green-desc {
         font-size: 1.8rem;
     }
 }
@@ -2312,15 +2322,22 @@ html.no-csstransitions .home-content__main {
     margin-top: 2rem;
 }
 
-.newsroom-text,
+.newsroom-text {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
 .newsroom-text a {
-    color: #222;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
 }
 
 .newsroom-text a:hover,
 .newsroom-text a:active {
-    color: #00ffff;
-    background-color: #222;
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
 
@@ -2368,55 +2385,57 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # services
+ * # members
  *
  * ------------------------------------------------------------------- */
-.s-services {
+.s-grey {
     padding-top: 16.2rem;
     padding-bottom: 13.2rem;
-    background-color: #c6c6c6;
-    color: #333;
+    background-color: #ccc;
+    color: #111;
     position: relative;
 }
 
 
 /* ------------------------------------------------------------------- 
- * ## services list
+ * ## members list
  * ------------------------------------------------------------------- */
-.services-list {
+.members-list {
     margin-top: 6rem;
 }
 
-.services-list .service-item {
+.members-list .members-item {
     margin-bottom: .9rem;
 }
 
-.services-list .service-item h3 {
+.members-list .members-item h3 {
     margin-top: 0;
 }
 
-.services-list .service-item:nth-child(2n+1) {
+.members-list .members-item:nth-child(2n+1) {
     padding-right: 50px;
 }
 
-.services-list .service-item:nth-child(2n+2) {
+.members-list .members-item:nth-child(2n+2) {
     padding-left: 50px;
 }
 
-.services-list .service-text {
+.members-list .members-text {
     margin-left: 7.8rem;
 }
 
-.services-list .service-text p a {
-    color: #333;
+.members-list .members-text p a {
+    color: #111;
+    text-decoration: none;
+    border-bottom: 2px solid #111;
 }
 
-.services-list .service-text p a:hover {
-    color: #333;
-    background-color: #00ffff;
+.members-list .members-text p a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
-.services-list .service-icon {
+.members-list .members-icon {
     float: left;
     color: #00ffff;
     font-size: 4.8rem;
@@ -2426,49 +2445,49 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * services
+ * members
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .services-list {
+    .members-list {
         max-width: 1000px;
     }
-    .services-list .service-item:nth-child(2n+1) {
+    .members-list .members-item:nth-child(2n+1) {
         padding-right: 30px;
     }
-    .services-list .service-item:nth-child(2n+2) {
+    .members-list .members-item:nth-child(2n+2) {
         padding-left: 30px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .services-list h3 {
+    .members-list h3 {
         font-size: 2.5rem;
     }
-    .services-list .service-item:nth-child(2n+1) {
+    .members-list .members-item:nth-child(2n+1) {
         padding-right: 20px;
     }
-    .services-list .service-item:nth-child(2n+2) {
+    .members-list .members-item:nth-child(2n+2) {
         padding-left: 20px;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .services-list {
+    .members-list {
         margin-top: 4.2rem;
         max-width: 500px;
         text-align: center;
     }
-    .services-list .service-item:nth-child(n) {
+    .members-list .members-item:nth-child(n) {
         padding-right: 15px;
         padding-left: 15px;
     }
-    .services-list h3 {
+    .members-list h3 {
         font-size: 3rem;
     }
-    .services-list .service-text {
+    .members-list .members-text {
         margin-left: 0;
     }
-    .services-list .service-icon {
+    .members-list .members-icon {
         font-size: 4.5rem;
         float: none;
         margin-top: 0;
@@ -2476,24 +2495,24 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 600px) {
-    .s-services {
+    .s-members {
         padding-top: 12rem;
     }
-    .services-list .service-item:nth-child(n) {
+    .members-list .members-item:nth-child(n) {
         padding-right: 10px;
         padding-left: 10px;
     }
-    .services-list h3 {
+    .members-list h3 {
         font-size: 2.5rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .services-list .service-item:nth-child(n) {
+    .members-list .members-item:nth-child(n) {
         padding-right: 0;
         padding-left: 0;
     }
-    .services-list h3 {
+    .members-list h3 {
         font-size: 2.5rem;
     }
 }
@@ -3485,28 +3504,31 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 footer {
     padding: 9rem 0 6rem;
-    font-family: "montserrat-light", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 2;
     text-align: center;
-    color: #999;
+    color: #ccc;
 }
 
 footer h4 {
-    color: #FFFFFF;
-    font-size: 1.6rem;
+    font-family: "montserrat-light", sans-serif;
+    color: #06c967;
+    font-size: 1.8rem;
     line-height: 1.313;
-    margin-top: 0;
-    margin-bottom: 3.6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 footer a {
-    color: #999;
+    color: #ccc;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
 }
 
 footer a:hover, footer a:focus, footer a:active {
-    color: #222;
-    background-color: #00ffff;
+    color: #06c967;
+    border-bottom: 1px solid #06c967;
 }
 
 footer .row {
@@ -3659,8 +3681,8 @@ footer .row {
     width: 60px;
     line-height: 60px;
     text-align: center;
-    background: black;
-    color: rgba(255, 255, 255, 0.5);
+    background: #999;
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease-in-out;
@@ -3673,7 +3695,8 @@ footer .row {
 }
 
 .go-top a:hover, .go-top a:focus {
-    color: #FFFFFF;
+    color: #000;
+    border-bottom: none;
 }
 
 
