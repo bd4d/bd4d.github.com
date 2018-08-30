@@ -3688,7 +3688,7 @@ footer .row {
     width: 60px;
     line-height: 60px;
     text-align: center;
-    background: #999;
+    background: #444;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -3703,6 +3703,7 @@ footer .row {
 
 .go-top a:hover, .go-top a:focus {
     color: #000;
+    background: #fff;
     border-bottom: none;
 }
 
